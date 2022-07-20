@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: #574ae8;
+  --gradient: linear-gradient(to right, var(--purple) 0%, #3ea1db 100%);
+  --white: #ffffff;
+  --white-200: #f3f5f7;
+  --gray: #717171;
+  --gray-dark: #1a202c;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--white-200);
+  font-size: 1.6rem;
+}
+body a.button {
+  padding: 1rem;
+  background-color: var(--purple);
+  color: white;
+  max-width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+body .container {
+  width: 100%;
+  max-width: 90rem;
+  padding: 0 2rem;
+}
+body a {
+  text-decoration: none;
+}
+body header {
+  width: 100%;
+  min-height: 25rem;
+  display: flex;
+  font-size: 2.4rem;
+  justify-content: center;
+  background: var(--gradient);
+  padding: 4rem 0;
+}
+body header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body header .top a {
+  color: var(--white);
+}
+body header .search_area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.5rem;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+body header .search_area input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  color: var(--white-200);
+  font-weight: 500;
+}
+body header .search_area input::-moz-placeholder {
+  color: rgba(243, 245, 247, 0.6705882353);
+}
+body header .search_area input:-ms-input-placeholder {
+  color: rgba(243, 245, 247, 0.6705882353);
+}
+body header .search_area input::placeholder {
+  color: rgba(243, 245, 247, 0.6705882353);
+}
+body header .search_area .svgArea {
+  padding: 0 2rem;
+}
+body header .search_area .svgArea svg {
+  font-size: 2.6rem;
+}
+body main {
+  width: 100%;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .container {
+  display: grid;
+  gap: 5rem;
+}
+body main .container .card {
+  width: 100%;
+  display: grid;
+  gap: 2.2rem;
+  min-height: 16.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  padding: 2.4rem;
+}
+body main .container .card.liked .heart {
+  background-position: -2800px 0 !important;
+  transition: background 1s steps(28) !important;
+}
+body main .container .card .top {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+body main .container .card .top .heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: -40px;
+  top: -30px;
+  background: url(https://cdn.discordapp.com/attachments/771766413563002920/998629738945990776/heart.png) no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  cursor: pointer;
+}
+body main .container .card .content {
+  display: grid;
+  gap: 0.8rem;
+}
+body main .container .card .content h1 {
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+body main .container .card .content p {
+  color: var(--gray);
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+}
+body main .container .button {
+  justify-self: center;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 46.88%;
+  }
+}
+@-webkit-keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}/*# sourceMappingURL=App.css.map */
